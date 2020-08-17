@@ -1,0 +1,21 @@
+{
+  "name": "rollup-readable-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js index.js",
+    "start": "node index.out.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "builtin-modules": "^3.1.0",
+    "joi": "^17.3.0",
+    "rollup": "^2.26.2"
+  }
+}
