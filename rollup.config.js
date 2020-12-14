@@ -7,12 +7,15 @@ export default {
   external: builtins,
   output: { format: 'cjs', sourcemap: true, file: 'index.out.js' },
   plugins: [
-    resolve({ preferBuiltins: true }),
+    resolve({
+      preferBuiltins: true
+    }),
     commonjs({
-      include: /node_modules/,
+      include: [/node_modules/, "index.js"],
+      transformMixedEsModules: true,
       dynamicRequireTargets: [
-        "**/node_modules/readable-stream/lib/**/*.js",
-      ]
+        "**/node_modules/joi/**/*.js",
+      ],
     }),
     json(),
   ],
