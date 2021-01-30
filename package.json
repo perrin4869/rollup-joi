@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-commonjs": "^18.0.0-0",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^11.0.1",
-    "builtin-modules": "^3.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "builtin-modules": "^3.2.0",
     "joi": "^17.3.0",
-    "rollup": "^2.35.1"
+    "rollup": "^2.38.1"
   }
 }

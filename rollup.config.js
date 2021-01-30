@@ -12,10 +12,10 @@ export default {
     }),
     commonjs({
       include: [/node_modules/, "index.js"],
-      transformMixedEsModules: true,
-      dynamicRequireTargets: [
-        "**/node_modules/joi/**/*.js",
-      ],
+      // transformMixedEsModules: true,
+      // dynamicRequireTargets: [
+      //   "**/node_modules/joi/**/*.js",
+      // ],
     }),
     json(),
   ],

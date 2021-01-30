@@ -1,5 +1,4 @@
 import Joi from "joi";
-// const Joi = require("joi");
 
 const schema = Joi.object({
   name: Joi.string()
