@@ -11,13 +11,6 @@ export default {
     resolve({
       preferBuiltins: true
     }),
-    commonjs({
-      include: [/node_modules/, "index.js", "index.ts"],
-      transformMixedEsModules: true,
-      dynamicRequireTargets: [
-        "**/node_modules/joi/**/*.js",
-      ],
-    }),
     typescript({
       tsconfigDefaults: {
         compilerOptions: {
@@ -36,6 +29,14 @@ export default {
         exclude: ["**/node_modules"],
         include: ["index.ts"]
       }
+    }),
+    commonjs({
+      include: [/node_modules/, "index.js", "index.ts"],
+      transformMixedEsModules: true,
+      dynamicRequireTargets: [
+        "**/node_modules/joi/**/*.js",
+      ],
+      extensions: ['.js', '.ts'],
     }),
     json(),
   ],
